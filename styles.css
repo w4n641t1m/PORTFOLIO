@@ -6,7 +6,7 @@
 html{
     scroll-behavior: smooth;
 }
-/* Navbar */
+/* Nav Bar */
 .navbar{
     display: flex;
     justify-content: center;
@@ -36,15 +36,13 @@ html{
     color: black;
     box-shadow: 0 0 10px white;
 }
-
-
-/* Home */
+/* HOME */
 
 #home{
     display: flex;
     flex-direction: column;
     background-color: rgb(0, 0, 0, 0.5);
-    height: 1480px;
+    height: 1550px;
     justify-content: center;
     align-items: center;
     color: beige;
@@ -54,7 +52,7 @@ html{
     position: absolute;
     top: 0;
     right: 0;
-    background: url(tawing2.jpg) no-repeat center center/cover;
+    background: url(images/background.jpg) no-repeat center center/cover;
     height: 1600px;
     width: 100%;
     z-index: -1;
@@ -73,58 +71,166 @@ html{
     font-family: century;
     font-size: 3rem;
     text-align: center;
-    margin: 40px 0px;
+    margin: 10px -30px;
 }
-.btn{
-    padding: 10px 35px;
+.Position{
+    padding: 5px 50px;
     background-color: transparent;
-    border: 1px solid white;
+    border: none;
     color: white;
     outline: none;
+    font-size: 1.5rem;
     transition: .6s ease;
-}
-.btn:hover{
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
-    font-weight: bold;
-
 }
 
 /* About */
-#about{
+
+#About{
+    padding: 80px 0px;
+    /*color: gray;*/
     background-color: rgb(0, 0, 0, 0.5);
+}
+.row{
     display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 20px;
-    margin-bottom: 0px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.pic{
+.About-col-1{
+    flex-basis: 35%;
+}
+.About-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    margin: 20px 20px;
+}
+.About-col-2{
+    flex-basis: 60%;
+}
+.About-col-2 h1{
+    font-size: 85px;
+    color: rgb(0, 0, 0, 0.5)ue;
+}
+.About-col-2 p{
+    font-size: 20px;
+    color: grey
+}
+.Info{
+    padding: 20px 7%;
     display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 20px 0 40px;
 }
-.pic img{
-    width: 700px;
-    height: 400px;
+.Informationss{
+    margin-right: 60px;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
 }
-#intro{
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    padding: 10px;
+.Informationss::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: all .5s;
 }
-#intro h2{
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-weight: bold;
+.Informationss.active-link::after{
+    width: 100%;
 }
-#intro p{
-    font-size: 1.8rem;
+.Info-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.Info-contents ul li span{
+    color: rgb(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+.Info-contents{
+    display: none;
+}
+.Info-contents.active-content{
+    display: block;
 }
 
-/* Work Experience */
-#workexperience{
+/* Contact */
+
+
+#Contact{
+    width: 100%;
+    height: 100vh;
+    /*background: blue;*/
+    background-image: url(images/back.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+
+}
+form h3{
+    color: grey;
+    font-weight: 800;
+    margin-bottom: 20px;
+
+}
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: aliceblue;
+    font-size: 16px;
+
+}
+form button{
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    outline: none;
+    font-size: 18px;
+    transition: .6s ease;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+}
+form button:hover{
+    cursor: pointer;
+    background-color: gray;
+    color: black;
+    box-shadow: 0 0 5px gray;
+    font-weight: bold;
+
+}
+
+/* Reference */
+/*
+#Reference{
+    padding: 30px 0;
+    background-image: url(images/back.jpg);
+
+}
+.reference-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250, 1fr));
+    grid-gap: 70px;
+    margin-top: 50px;
+
+}*/
+#Reference{
     background-color: rgb(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
@@ -137,19 +243,21 @@ html{
     flex-wrap: wrap;
     box-sizing: border-box;
 }
+.box p{
+    font-size: 1.5rem;
+}
 .box{
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 450px;
     height: 450px;
-    border: 1px solid black;
+    border: 1px solid white;
     margin: 10px;
     align-items: center;
     text-align: justify;
     padding: 10px;
     border-radius: 15px;
-    background: linear-gradient(to top, rgb(45, 223, 255) 50%, white 50%);
-    /*background: url(tawing2.jpg) no-repeat center center/cover;*/
+    background: linear-gradient(to top, rgb(45, 223, 255) 50%, black 50%);
     background-size: 100% 200%;
     transition: all .8s;
 }
@@ -159,47 +267,3 @@ html{
     border: none;
     box-shadow: 0 0 20px rgb(45,223,255);
 }
-#contact{
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    background-color: rgb(0, 0, 0, 0.5);
-    color: white;
-    padding: 20px;
-}
-.form{
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    align-items: center;
-    margin: 20px 0px;
-}
-.input{
-    padding: 20px;
-    margin: 15px;
-    width: 30%;
-    border: none;
-    outline: none;
-}
-#msg{
-    width: 20%;
-    padding: 10px;
-    margin: 15px;
-    border: none;
-    outline: none;
-}
-#send{
-    padding: 10px;
-    width: 10%;
-    margin: 40px;
-    border: none;
-    outline: none;
-}
-#send:hover{
-    cursor: pointer;
-    box-shadow: 0 0 10px white;
-    font-weight: bold;
-}
-
-
-
