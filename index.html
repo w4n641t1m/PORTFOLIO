@@ -13,7 +13,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#Reference">Reference</a></li> 
+                <li><a href="#Project">My Projects</a></li> 
                 <li><a href="#Contact">Contact Me</a></li>
                 
             </ul>
@@ -30,7 +30,7 @@
             <div class="container">
                 <div class="row">
                     <div class="About-col-1">
-                        <img src="images/louie.jpg">
+                        <img src="images/tawing2.jpg">
                     </div>
                     <div class="About-col-2">
                         <h1>About Me</h1>
@@ -82,38 +82,52 @@
             </div>
         </section>
         <!--------------------------Reference-------------------------------------------------->
-        <section id="Reference">
-            <h1 class="headings">My Reference</h1>
+        <section id="Project">
+            <h1 class="headings">My Projects</h1>
             <div class="row">
-                <div class="box">
-                    <h2 class="headings">Edipolo S. Achas</h2>
-                    <p>Minister - Tree of Life Church Surigao</p><br>
-                    <p>My Pastor and A second father to me, He showed me the way to become a better person after my late father</p>
+                <div class="box1">
+                    <h2 class="headings">Online Portfolio</h2>
+                    <p>Simple Protfolio</p><br>
+                    <p>This is my first project, 
+                        It was simply to gain back my programming capability that I have not use almost 5 years ago and
+                        I wanted to program for a long time so I tried to make a portfolio to be seen online and I made this.
+
+                    </p>
                 </div>
-                <div class="box">
-                    <h2 class="headings">Ghandi B. Galila</h2>
-                    <p>Professor - Surigao State College of Technology</p><br>
-                    <p>My Classmate and a friend who supported and help me</p>
+                <div class="box2">
+                    <h2 class="headings">Company Local Website</h2>
+                    <p>Local Server Website</p><br>
+                    <p>I was about to propose a local website
+                        but then my boss ask me if I could make something like a website for virtual record 
+                        and i should be like local server. So I did something and I made a local website.
+                    </p>
                 </div>
-                <div class="box">
+                <!------------
+                
+                        <div class="box3">
                     <h2 class="headings">Abraham A. Parcon</h2>
                     <p>IT Specialist</p><br>
                     <p>A former coworker and a friend and mentor who gave me an advice in my field of expertise</p>
                 </div>
+                
+                
+                ----------------------------------->
+        
             </div>
         </section>
         <!-------------------------CONTACT--------------------------------------------------->
         <section id="Contact">
-            <form action="https://api.web3forms.com/submit" method="POST">
+            <form id="form" method="POST">
                 <h3>CONTACT ME HERE</h3>
                 <input type="hidden" name="access_key" value="3cce0fb7-61d2-4129-be36-616b98d08317">
                 <input type="text" id="name" placeholder="Your Name" name="name" required>
                 <input type="email" id="email" placeholder="Your Email Address" name="email" required>
                 <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
                 <button type="submit">Send</button>
+                <div id="result"></div>
             </form>
         </section>
-        <script src="index.js"></script>
+        <script src="script.js"></script>
     </body>
 
 </html>
